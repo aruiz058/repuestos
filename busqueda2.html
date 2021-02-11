@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Repuestos Find</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.3.1.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<img src="images/ute.png" width="200">
+       <a class="navbar-brand" href="index.html">Inicio</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#">Comenzar <span class="sr-only">(current)</span></a>
+             </li>
+              </ul>
+          <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Buscar...." aria-label="Search">
+           
+          </form>
+       </div>
+    </nav>
+<div class="container">
+       <br>
+       <hr>2do paso: Ahora seleccione el modelo de su auto para tener una mejor prespectiva de su necesidad. 
+	<br><br>
+	<select name="model" id="modelos" class="form-control" style="display: block;">
+	<option selected="" value="" disabled="">Seleccionar modelo</option>
+	
+				
+
+		<option value="7">ALTO (1991 - 2015 ) </option>
+	
+				
+
+		<option value="21">ASTRA </option>
+	
+				
+
+		<option value="381">ASTRA 3P </option>
+	
+				
+
+		<option value="382">ASTRA 4P </option>
+	
+				
+
+		<option value="26">AVEO </option>
+	
+				
+
+		<option value="373">AVEO ACTIVO </option>
+	
+				
+
+		<option value="39">AVEO EMOTION </option>
+	
+				
+
+		<option value="222">AVEO EMOTION GT (2010 - 2013 ) </option>
+	
+				
+
+		<option value="37">AVEO FAMILY </option>
+	
+				
+
+		<option value="387">AVEO GT (2012 - - ) </option>
+	
+				
+
+		<option value="428">Alto Twin Cam </option>
+	
+				
+
+		<option value="429">Astra GLS </option>
+	
+				
+
+		<option value="430">Aveo </option>
+	
+				
+
+		<option value="431">Aveo Chevytaxi </option>
+	
+				
+
+		<option value="383">BEAT (2018 - - ) </option>
+	
+				
+
+		<option value="731">BLAZER </option>
+	
+				
+
+		<option value="432">Blazer </option>
+	
+				
+
+		<option value="380">CAMARO (2011 - 2016 ) </option>
+	
+				
+
+		<option value="376">CAMION </option>
+	
+				
+
+		<option value="333">CAPTIVA </option>
+	
+				
+
+		<option value="76">CAPTIVA SPORT (2002 - 2010 ) </option>
+	
+				
+
+		<option value="716">CAPTIVA TURBO </option>
+	
+				
+
+		<option value="42">CAVALIER </option>
+	
+				
+
+		<option value="714">CHEVROLET </option>
+	
+				
+
+		<option value="99">CHEVY TAXI (2005 - 2019 ) </option>
+	
+				
+
+		<option value="174">CHEVYTAXI (2005 - 2018 ) </option>
+	
+				
+
+		<option value="475">CHR </option>
+	
+				
+
+		<option value="67">CORSA </option>
+	
+				
+
+		<option value="749">CORSA 1600CC </option>
+	
+				
+
+		<option value="746">CORSA 4P </option>
+	
+				
+
+		<option value="33">CORSA EVOLUTION </option>
+	
+				
+
+		<option value="737">CORSA WIND 4P </option>
+	
+				
+
+		<option value="386">CORSA WIND 5P </option>
+	
+				
+
+		<option value="65">CRUZE </option>
+	
+				
+
+		<option value="751">CRUZE NG </option>
+	
+				
+
+		<option value="116">CYZ </option>
+	
+				
+
+		<option value="435">Camaro </option>
+	
+				
+
+		<option value="436">Captiva </option>
+	
+				
+
+		<option value="438">Chevette </option>
+	
+				
+
+		<option value="439">Condor </option>
+	
+				
+
+		<option value="441">Corsa Evolution </option>
+	
+				
+
+		<option value="440">Corsa Wind </option>
+	
+				
+
+		<option value="437">Cruze </option>
+	
+				
+
+		<option value="77">D-MAX </option>
+	
+				
+
+		<option value="197">D-MAX 2,4 </option>
+	
+				
+
+		<option value="48">D-MAX 2.4 </option>
+	
+				
+
+		<option value="80">D-MAX 2.5 DIESEL (2004 - 2013 ) </option>
+	
+				
+
+		<option value="27">D-MAX 3.0 DIESEL </option>
+	
+				
+
+		<option value="91">D-MAX 3.5 </option>
+	
+				
+
+		<option value="5">D-MAX RT50 (2014 - - ) </option>
+	
+				
+
+		<option value="119">D-MAX RT53 (2014 - 2015 ) </option>
+	
+				
+
+		<option value="231">D-MAX RT95 (2019 - - ) </option>
+	
+				
+
+		<option value="442">D-Max </option>
+	
+				
+
+		<option value="366">DMAX </option>
+	
+				
+
+		<option value="745">DMAX 2.4 </option>
+	
+				
+
+		<option value="301">DMAX 3.0 </option>
+	
+				
+
+		<option value="726">DMAX 3.5 </option>
+	
+				
+
+		<option value="713">EQUINOX </option>
+	
+				
+
+		<option value="12">ESTEEM (1991 - 2015 ) </option>
+	
+				
+
+		<option value="443">Equinox </option>
+	
+				
+
+		<option value="444">Esteem </option>
+	
+				
+
+		<option value="64">FORSA (1992 - 2015 ) </option>
+	
+				
+
+		<option value="92">FORSA 1.3 </option>
+	
+				
+
+		<option value="79">FORSA I </option>
+	
+				
+
+		<option value="8">FORSA II (1991 - 2015 ) </option>
+	
+				
+
+		<option value="829">FORZA (NULL - NULL ) </option>
+	
+				
+
+		<option value="682">FRR </option>
+	
+				
+
+		<option value="711">FSR </option>
+	
+				
+
+		<option value="71">FTR </option>
+	
+				
+
+		<option value="684">FVR </option>
+	
+				
+
+		<option value="681">FVZ </option>
+	
+				
+
+		<option value="445">Forsa I </option>
+	
+				
+
+		<option value="446">Forsa II </option>
+	
+				
+
+		<option value="81">GRAN VITARA 5/P </option>
+	
+				
+
+		<option value="388">GRAN VITARA XL7 </option>
+	
+				
+
+		<option value="782">GRAND BLAZER (1994 - 1995 ) </option>
+	
+				
+
+		<option value="10">GRAND VITARA (1991 - 2015 ) </option>
+	
+				
+
+		<option value="51">GRAND VITARA 3P </option>
+	
+				
+
+		<option value="237">GRAND VITARA 5/P </option>
+	
+				
+
+		<option value="50">GRAND VITARA 5P </option>
+	
+				
+
+		<option value="30">GRAND VITARA 5P XL7 (2003 - 2018 ) </option>
+	
+				
+
+		<option value="22">GRAND VITARA SZ </option>
+	
+				
+
+		<option value="25">GRAND VITARA SZ NEXT (2015 - 2017 ) </option>
+	
+				
+
+		<option value="433">Grand Blazer </option>
+	
+				
+
+		<option value="447">Grand Vitara </option>
+	
+				
+
+		<option value="448">Grand Vitara SZ </option>
+	
+				
+
+		<option value="89">HHR </option>
+	
+				
+
+		<option value="449">Isuzu 1600 ; 1800 </option>
+	
+				
+
+		<option value="712">JIMMY </option>
+	
+				
+
+		<option value="9">JIMNY (1991 - 2015 ) </option>
+	
+				
+
+		<option value="450">Jimmy </option>
+	
+				
+
+		<option value="379">LT </option>
+	
+				
+
+		<option value="117">LUV </option>
+	
+				
+
+		<option value="763">LUV / TROOPER </option>
+	
+				
+
+		<option value="748">LUV 2,2 </option>
+	
+				
+
+		<option value="115">LUV 2.2 </option>
+	
+				
+
+		<option value="377">LUV 2.3 (1991 - 1998 ) </option>
+	
+				
+
+		<option value="686">LUV 2.5 DIESEL </option>
+	
+				
+
+		<option value="725">LUV 2.8 DIESEL </option>
+	
+				
+
+		<option value="385">LUV 2300 </option>
+	
+				
+
+		<option value="114">LUV 3.2 </option>
+	
+				
+
+		<option value="250">LUV D-MAX (2005 - 2013 ) </option>
+	
+				
+
+		<option value="683">LUV DIESEL </option>
+	
+				
+
+		<option value="451">Luv </option>
+	
+				
+
+		<option value="372">MINI BLAZER </option>
+	
+				
+
+		<option value="94">MULTIMODELO </option>
+	
+				
+
+		<option value="434">Mini Blazer </option>
+	
+				
+
+		<option value="452">Monza GLS </option>
+	
+				
+
+		<option value="453">N 200 </option>
+	
+				
+
+		<option value="454">N 300 </option>
+	
+				
+
+		<option value="49">N200 </option>
+	
+				
+
+		<option value="23">N300 </option>
+	
+				
+
+		<option value="36">NHR </option>
+	
+				
+
+		<option value="84">NKR </option>
+	
+				
+
+		<option value="118">NLR </option>
+	
+				
+
+		<option value="35">NMR </option>
+	
+				
+
+		<option value="24">NPR </option>
+	
+				
+
+		<option value="241">NQR (2008 - 2010 ) </option>
+	
+				
+
+		<option value="38">OPTRA </option>
+	
+				
+
+		<option value="86">ORLANDO </option>
+	
+				
+
+		<option value="455">Optra </option>
+	
+				
+
+		<option value="456">Orlando </option>
+	
+				
+
+		<option value="82">RODEO (1994 - 1997 ) </option>
+	
+				
+
+		<option value="457">Rodeo </option>
+	
+				
+
+		<option value="85">S-CROSS (1996 - 2016 ) </option>
+	
+				
+
+		<option value="466">S-Cross </option>
+	
+				
+
+		<option value="378">S10 </option>
+	
+				
+
+		<option value="4">SAIL </option>
+	
+				
+
+		<option value="41">SAIL S3 </option>
+	
+				
+
+		<option value="747">SAN REMO </option>
+	
+				
+
+		<option value="476">SERIE F </option>
+	
+				
+
+		<option value="477">SERIE N </option>
+	
+				
+
+		<option value="96">SILVERADO </option>
+	
+				
+
+		<option value="57">SPARK </option>
+	
+				
+
+		<option value="66">SPARK GT </option>
+	
+				
+
+		<option value="238">SPARK LIFE (2006 - 2017 ) </option>
+	
+				
+
+		<option value="735">STEEM </option>
+	
+				
+
+		<option value="40">SUPER CARRY (1991 - 2004 ) </option>
+	
+				
+
+		<option value="828">SUZUKI (NULL - NULL ) </option>
+	
+				
+
+		<option value="6">SWIFT (1991 - 2015 ) </option>
+	
+				
+
+		<option value="458">Sail S2 </option>
+	
+				
+
+		<option value="459">Sail S3 </option>
+	
+				
+
+		<option value="460">San Remo </option>
+	
+				
+
+		<option value="461">Spark 1 </option>
+	
+				
+
+		<option value="462">Spark 2 </option>
+	
+				
+
+		<option value="463">Spark GT </option>
+	
+				
+
+		<option value="464">Super Carry </option>
+	
+				
+
+		<option value="465">Swift </option>
+	
+				
+
+		<option value="715">TAHOE </option>
+	
+				
+
+		<option value="29">TRACKER </option>
+	
+				
+
+		<option value="47">TRAIL BLAZER </option>
+	
+				
+
+		<option value="228">TROOPER (1982 - 1992 ) </option>
+	
+				
+
+		<option value="762">TROOPER 3200 </option>
+	
+				
+
+		<option value="120">TROOPER WAGON </option>
+	
+				
+
+		<option value="467">Tahoe </option>
+	
+				
+
+		<option value="468">Tracker </option>
+	
+				
+
+		<option value="469">Trail Blazer </option>
+	
+				
+
+		<option value="470">Trooper </option>
+	
+				
+
+		<option value="753">VAN DIESEL 7.3L </option>
+	
+				
+
+		<option value="687">VECTRA </option>
+	
+				
+
+		<option value="11">VITARA (1991 - 2015 ) </option>
+	
+				
+
+		<option value="34">VITARA 3P </option>
+	
+				
+
+		<option value="710">VITARA 3P 8V </option>
+	
+				
+
+		<option value="730">VITARA 5P </option>
+	
+				
+
+		<option value="390">VIVANT </option>
+	
+				
+
+		<option value="471">Vectra </option>
+	
+				
+
+		<option value="472">Vitara </option>
+	
+				
+
+		<option value="473">Vivant </option>
+	
+				
+
+		<option value="313">ZAFIRA (1996 - 2006 ) </option>
+	
+				
+
+		<option value="750">ZOTYE Z100 </option>
+	
+				
+
+		<option value="20">ZSIN MODELO </option>
+	
+				
+
+		<option value="474">Zafira </option>
+	
+
+</select>
+	<br><br>
+	<a href="busqueda3.html"#"" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Siguiente...</a>
+       <br>
+<br/>
+       <br/>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Grupo Bastidas </h4>
+             <p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; <a href="#" >Repuestos automotrices</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.3.1.js"></script>
+  </body>
+</html>
